@@ -1,0 +1,57 @@
+#navbar-side ul h4{
+    text-align:center;
+    margin-bottom:20px;
+
+}
+#navbar-side ul{
+    overflow: hidden;
+
+}
+
+#navbar-side ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#navbar-side a{
+    width: 100%;
+    font-size: 14px;
+    line-height: normal;
+    padding: 10px 0 10px 0px;
+    box-sizing: border-box;
+    display: block;
+    color: #555;
+    text-decoration: none;
+}
+
+#navbar-side a:hover{
+    padding-left: 17px;
+    background-color: #fff;
+    color: #08c;
+    border-right: 3px solid gray;
+}
+
+#navbar-side ul ul{
+    display: none;
+}
+
+#navbar-side ul ul li a{
+    padding-left: 30px;
+    border-left: none;
+}
+
+#navbar-side ul ul li a:hover{
+    padding-left: 30px;
+    border-left: none;
+}
+
+#navbar-side .menu-text{
+    margin-left: 20px;
+}
+
+#navbar-side b{
+    float: right;
+    margin-right: 17px;
+}

@@ -8,8 +8,7 @@
 #content > article {
         margin: 1px;
         padding: 2px;
-        //border: 1px solid #cccc33;
-        border-radius: 2px;
+        border-radius: 5px;
         background: white;
         item-align:center;
         flex: 3 1 60%;
@@ -19,8 +18,8 @@
     #content > nav {
         margin: 1px;
         padding: 2px;
-        //border: 1px solid #cccc33;
-        border-radius: 2px;
+        height: fit-content;
+        border-radius: 5px;
         background: white;
         flex: 1 6 10%;
         order: 1;
@@ -29,8 +28,7 @@
     #content > aside {
         margin: 1px;
         padding: 2px;
-        //border: 1px solid #cccc33;
-        border-radius: 2px;
+        border-radius: 5px;
         background: white;
         flex: 1 6 20%;
         order: 3;

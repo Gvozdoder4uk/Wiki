@@ -13,7 +13,8 @@
             </form>
         </div>
         <div class="user_nav">
-                <img class="user_avatar" src="{{request.user.photo.url}}">
+
+                <img class="user_avatar" src="{% if 'request.user.photo.url' == '' %}{% static '/images/default_photo.jpg' %}{% else %}{{request.user.photo.url}}{% endif %}">
             <div class="user_info">
                 <div class="username"><h4>{{request.user.bio}}</h4></div>
                 <div class="username"><h5>{{request.user.otdel}}</h5></div>
@@ -22,12 +23,12 @@
     </div>
     <div class="mainnav">
         <div class="topnav" id="myTopNav">
-            <a href="{% url 'index' %}">Компания</a>
-            <a href="{% url 'index' %}">Сотрудники</a>
-            <a href="{% url 'index' %}">WIKI</a>
-            <a href="{% url 'index' %}">Документы</a>
-            <a href="{% url 'index' %}">Сервисы</a>
-            <a href="{% url 'index' %}">Контакты</a>
+            <a href="{% url 'index' %}"><i class="fa fa-home"></i><span class="menu-text">Компания</span></a>
+            <a href="{% url 'index' %}"><i class="fa fa-bar-chart-o"></i><span class="menu-text">Сотрудники</span></a>
+            <a href="{% url 'index' %}"><i class="fa fa-home"></i><span class="menu-text">Документы</span></a>
+            <a href="{% url 'index' %}"><i class="fa fa-home"></i><span class="menu-text">Сервисы</span></a>
+            <a href="{% url 'index' %}"><i class="fa fa-home"></i><span class="menu-text">Система управления знаниями</span></a>
+            <a href="{% url 'index' %}"><i class="fa fa-home"></i><span class="menu-text">Контакты</span></a>
             <a id="menu" class="icon">&#9776;</a>
         </div>
 

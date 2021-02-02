@@ -164,10 +164,18 @@ input[type=search]:focus {
     text-align: center;
     margin-left: 10px;
     padding: 0px 15px 10px;
-    font-size: 16px;
-    font-weight:bold;
+    font-size: 15px;
+    line-height: normal;
+    padding: 10px 0 10px 0px;
+    box-sizing: border-box;
+    color: #555;
+    text-decoration: none;
+
 }
-.topnav a:hover{
+.topnav a span{
+    margin-left: 10px;
+}
+.topnav a span:hover{
     border-bottom: 2px solid #d9e4dd;
 }
 .topnav .icon {
