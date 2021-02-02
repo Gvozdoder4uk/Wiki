@@ -1,0 +1,38 @@
+<!-- Главное меню всего сайта. -->
+{% load static %}
+
+<header>
+    <title>ИТ Портал</title>
+    <div class="main_header">
+        <div class="logo">
+            <a href="{% url 'index' %}"><img class="graficlogo" src="{% static 'images/logo_rat.png'%}"></a>
+        </div>
+        <div class="header_search">
+            <form>
+                <input type="search" placeholder="Поиск">
+            </form>
+        </div>
+        <div class="user_nav">
+                <img class="user_avatar" src="{{request.user.photo.url}}">
+            <div class="user_info">
+                <div class="username"><h4>{{request.user.bio}}</h4></div>
+                <div class="username"><h5>{{request.user.otdel}}</h5></div>
+            </div>
+        </div>
+    </div>
+    <div class="mainnav">
+        <div class="topnav" id="myTopNav">
+            <a href="{% url 'index' %}">Компания</a>
+            <a href="{% url 'index' %}">Сотрудники</a>
+            <a href="{% url 'index' %}">WIKI</a>
+            <a href="{% url 'index' %}">Документы</a>
+            <a href="{% url 'index' %}">Сервисы</a>
+            <a href="{% url 'index' %}">Контакты</a>
+            <a id="menu" class="icon">&#9776;</a>
+        </div>
+
+    </div>
+
+</header>
+<script src="{% static 'js/header.js' %}"></script>
+<!--Скрипты для заголовка слайдеры и счетчики-->

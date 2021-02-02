@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    text-decoration: none;
+    list-style:none;
+}
+html{
+    height:100%;
+}
+body{
+    margin: 2px 2px 2px 2px;
+    border: 2px solid gray;
+    font-family: 'Roboto', sans-serif;
+    background: #d9e4dd;
+}
+.main_header{
+        display:flex;
+        //flex-flow: row;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+
+}
+.logo{
+       padding-top: 5px;
+       height: 65px;
+       object-fit:contain;
+       background: #222831;
+       display:flex;
+       justify-content:left;
+       flex: 0 0 20%;
+       order: 1;
+}
+.user_nav{
+           padding: 2px 5px 5px 2px;
+           background: #222831;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           flex: 0 0 35%;
+           order: 3;
+}
+.user_nav img {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  border: 2px solid orange;
+}
+
+.user_nav .username{
+    color: white;
+    font-size: 15px;
+    padding: 0px 15px;
+    top:1;
+}
+
+.user_info{
+    padding: 0px 10px;
+    display:flex;
+    flex-flow:column;
+}
+.user_info .username{
+    padding: 2px;
+    order: 1;
+
+}
+.user_info .work{
+    order: 2;
+}
+
+.header_search{
+           padding-top: 2px;
+           background: #222831;
+           display:flex;
+           justify-content:left;
+           align-items:center;
+           flex: 1 3 20%;
+           order: 2;
+}
+
+// SEARCH FIELD
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 16px;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px orange;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+// USER NAV PANEL
+
+
+
+
+.user_menu{
+
+}
+
+
+.graficlogo{
+   padding: 5px;
+   max-width:100%;
+   box-sizing: border-box;
+}
+
+.topnav{
+    display:flex;
+    height: 35px;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    background-color:white;
+    font-size:16px;
+    justify-content: left;
+    align-items:center;
+}
+.topnav a{
+    color: #000;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0px 15px 10px;
+    font-size: 16px;
+    font-weight:bold;
+}
+.topnav a:hover{
+    border-bottom: 2px solid #d9e4dd;
+}
+.topnav .icon {
+    display:none;
+}
+
+// IMG SETTINGS
+
+// MEDIA SETTINGS
+@media screen and (max-width:640px){
+    .topnav a{
+        display:none;
+    }
+    .topnav .icon{
+        margin-left: auto;
+        order: 2;
+        border-radius: 5px;
+        float:right;
+        margin-top:-2px;
+        display: flex;
+        color: #000;
+        flex-direction: column;
+    }
+    nav{
+        width:100%;
+        height:100%;
+    }
+    .topnav.responsive{
+        display: block;
+        width:100%;
+        height:500%;
+        flex-direction: column;
+
+    }
+    .topnav.responsive a.icon{
+            display:flex;
+            justify-content: right;
+            align-items: right;
+            right: 0;
+            left: 0;
+    }
+    .topnav.responsive a{
+            padding: 10px 16px;
+            float:none;
+            display:flex;
+            text-align:center;
+            flex-direction: column;
+    }
+}

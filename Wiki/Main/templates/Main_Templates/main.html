@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<!--CSS файлы-->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/content.css' %}">
+<link type='text/css' href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<!--JS подключения-->
+
+<body>
+{% block header %}
+    {% include 'Include_Templates/header.html'%}
+{% endblock %}
+{% block content %}
+<div id="content" >
+    {% include 'Include_Templates/sidenav.html' %}
+    <article>
+        <h2>Добро пожаловать на сайт Wiki</h2><br>
+
+    </article>
+    {% include 'Include_Templates/sidecontent.html' %}
+
+
+</div>
+{% endblock content %}
+{% block footer %}
+<footer><h5>Ваше устройство {{request.user_agent.device.family}}</h5></footer>
+{% endblock footer%}
+</body>
+<script src="{% static 'js/header.js' %}"></script>
+</html>
+
